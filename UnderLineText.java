@@ -1,9 +1,6 @@
-class UnderLineText extends Text {
-    private Text decoratedText;
-
-    public UnderLineText(Text text) {
-        super(text.getText());
-        this.decoratedText = text;
+class UnderLineText extends TextDecorator {
+    public UnderLineText(Text decoratedText) {
+        super(decoratedText);
     }
 
     @Override

@@ -1,9 +1,6 @@
-class ItalicText extends Text {
-    private Text decoratedText;
-
-    public ItalicText(Text text) {
-        super(text.getText());
-        this.decoratedText = text;
+class ItalicText extends TextDecorator {
+    public ItalicText(Text decoratedText) {
+        super(decoratedText);
     }
 
     @Override

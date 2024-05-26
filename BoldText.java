@@ -1,9 +1,6 @@
-class BoldText extends Text {
-    private Text decoratedText;
-
-    public BoldText(Text text) {
-        super(text.getText());
-        this.decoratedText = text;
+class BoldText extends TextDecorator {
+    public BoldText(Text decoratedText) {
+        super(decoratedText);
     }
 
     @Override
